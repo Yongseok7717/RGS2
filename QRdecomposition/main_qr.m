@@ -4,7 +4,6 @@ f=@(x,y) sin(10*(x+y))./(cos(100*(y-x))+1.1);
 n=1e6;
 m=500;
 t = min(n, ceil(2*m*log(n)/log(m)));
-% t=800;
 fprintf('Sketch size = %d\n',t)
 x=linspace(0,1,n)';
 y=linspace(0,1,m)';
