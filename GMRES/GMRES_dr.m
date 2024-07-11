@@ -85,7 +85,7 @@ end
 if isa(A,'sparse')||isa(A,'double')
     A0 = @(x) A*x; %A0 is the original system
 elseif ~isa(A,'function_handle')
-    error(message('randgmres: l.h.s. must be a square matrix or function handle'));
+    error(message('gmres: l.h.s. must be a square matrix or function handle'));
 end
 
 A = @(x) A0(prec(x));
